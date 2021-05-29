@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Product{
-
+class Product {
   // final String? image;
   // final String? title;
   // final String? description;
@@ -10,30 +9,29 @@ class Product{
   // final int? id;
   // final Color? color;
 
-
   final String image, title, description;
   final int price, size, id;
   final Color color;
   Product({
-      this.id,
-      this.title,
-      this.price,
-      this.size,
-      this.description,
-      this.image,
-      this.color,
+    this.id,
+    this.title,
+    this.price,
+    this.size,
+    this.description,
+    this.image,
+    this.color,
   });
 }
 
-List<Product> products=[
+List<Product> products = [
   Product(
-    id: 1,
-    title: "Office Code1",
-    price: 50001,
-    size: 15,
-    description: dummyText,
-    image: "assets/images/bag1.png",
-    color: Color(0xFF5CD1E5)),
+      id: 1,
+      title: "Office Code1",
+      price: 50001,
+      size: 15,
+      description: dummyText,
+      image: "assets/images/bag1.png",
+      color: Color(0xFF5CD1E5)),
   Product(
       id: 2,
       title: "Office Code2",
@@ -76,4 +74,9 @@ List<Product> products=[
       color: Color(0xFF47C83E)),
 ];
 
-String dummyText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry";
+List<Product> carts = [];
+
+List<Product> likes = [];
+
+String dummyText =
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry";
