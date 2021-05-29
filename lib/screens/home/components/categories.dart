@@ -1,14 +1,13 @@
 import 'package:app1_flutter/constants.dart';
 import 'package:flutter/material.dart';
 
-class Categories extends StatefulWidget{
-
+class Categories extends StatefulWidget {
   @override
   _CategoriesState createState() => _CategoriesState();
 }
 
-class _CategoriesState extends State<Categories>{
-  List<String> categories = ["Hand Bag","Jewellery","Footwear","Dresses"];
+class _CategoriesState extends State<Categories> {
+  List<String> categories = ["Hand Bag", "Jewellery", "Footwear", "Dresses"];
   int selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
@@ -20,8 +19,7 @@ class _CategoriesState extends State<Categories>{
             scrollDirection: Axis.horizontal,
             itemCount: categories.length,
             itemBuilder: (context, index) => buildCategory(index),
-          )
-      ),
+          )),
     );
   }
 
