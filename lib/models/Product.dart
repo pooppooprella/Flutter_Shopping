@@ -74,9 +74,43 @@ List<Product> products = [
       color: Color(0xFF47C83E)),
 ];
 
-List<Product> carts = [];
+List<Product> carts = [
+  Product(
+      id: 5,
+      title: "Office Code5",
+      price: 50005,
+      size: 55,
+      description: dummyText,
+      image: "assets/images/bag5.png",
+      color: Color(0xFF6F5400)),
+  Product(
+      id: 6,
+      title: "Office Code6",
+      price: 50006,
+      size: 32,
+      description: dummyText,
+      image: "assets/images/bag6.png",
+      color: Color(0xFF47C83E)),
+];
 
-List<Product> likes = [];
+List<Product> likes = [
+  Product(
+      id: 5,
+      title: "Office Code5",
+      price: 50005,
+      size: 55,
+      description: dummyText,
+      image: "assets/images/bag5.png",
+      color: Color(0xFF6F5400)),
+  Product(
+      id: 6,
+      title: "Office Code6",
+      price: 50006,
+      size: 32,
+      description: dummyText,
+      image: "assets/images/bag6.png",
+      color: Color(0xFF47C83E)),
+];
 
 String dummyText =
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry";
