@@ -2,8 +2,6 @@ import 'package:app1_flutter/screens/cart/components/body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../constants.dart';
-
 class CartScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -25,7 +23,9 @@ class CartScreen extends StatelessWidget {
       //뒤로가기버튼
       leading: IconButton(
         icon: SvgPicture.asset("assets/icons/back.svg"),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pop(context);
+        },
       ),
 
       //검색버튼
