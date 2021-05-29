@@ -2,6 +2,7 @@ import 'package:app1_flutter/screens/like/components/body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
+//좋아요 화면
 class LikeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
