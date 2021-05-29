@@ -1,3 +1,4 @@
+import 'package:app1_flutter/screens/cart/cart_screen.dart';
 import 'package:app1_flutter/screens/home/components/body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -7,14 +8,14 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar(),
+      appBar: buildAppBar(context),
       // body: Body(),
       // appBar: buildAppBar(),
       body: Body(),
     );
   }
 
-  AppBar buildAppBar() {
+  AppBar buildAppBar(BuildContext context) {
     return AppBar(
       backgroundColor: Colors.white,
       elevation: 0,
@@ -32,7 +33,9 @@ class HomeScreen extends StatelessWidget {
             "assets/icons/search.svg",
             color: kTextColor,
           ),
-          onPressed: () {},
+          onPressed: () {
+
+          },
         ),
 
         //카트버튼
@@ -41,7 +44,9 @@ class HomeScreen extends StatelessWidget {
             "assets/icons/cart.svg",
             color: kTextColor,
           ),
-          onPressed: () {},
+          onPressed: () => Navigator.push(context,
+                    MaterialPageRoute(
+                        builder: (context) => CartScreen())),
         ),
         SizedBox(
           width: kDefaultPadding / 2,
