@@ -1,3 +1,4 @@
+import 'package:app1_flutter/screens/cart/cart_screen.dart';
 import 'package:app1_flutter/screens/home/components/body.dart';
 import 'package:app1_flutter/screens/like/like_screen.dart';
 import 'package:flutter/material.dart';
@@ -49,7 +50,9 @@ class HomeScreen extends StatelessWidget {
             "assets/icons/search.svg",
             color: kTextColor,
           ),
-          onPressed: () {},
+          onPressed: () {
+
+          },
         ),
 
         //카트버튼
@@ -58,7 +61,9 @@ class HomeScreen extends StatelessWidget {
             "assets/icons/cart.svg",
             color: kTextColor,
           ),
-          onPressed: () {},
+          onPressed: () => Navigator.push(context,
+                    MaterialPageRoute(
+                        builder: (context) => CartScreen())),
         ),
         SizedBox(
           width: kDefaultPadding / 2,
